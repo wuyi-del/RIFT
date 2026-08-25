@@ -1,0 +1,6 @@
+routing_score,candidate_gate,route_budget,target_map,sixbench_macro,delta_vs_current,ci_low,ci_high,holm_p
+Current-only,fixed,exact-rank q25,fixed,71.0083,,,,
+Future-shuffled,fixed,exact-rank q25,fixed,70.8426,-0.1657,-0.8124,0.4513,0.612
+True future,fixed,exact-rank q25,fixed,71.5412,0.5329,0.1186,0.9472,0.028
+Future + current,fixed,exact-rank q25,fixed,71.7328,0.7245,0.2964,1.1526,0.012
+

@@ -1,0 +1,223 @@
+% Central result-injection file for the AAAI-27 manuscript.
+% Replace only the right-hand sides after a result snapshot is declared final.
+% The checkpoint-100 pooled and strong-baseline values below follow the
+% user-authoritative corrected table received on 2026-07-28; C3 raw-asset
+% synchronization is tracked separately from manuscript value authority.
+
+% P2-04B: historical seed-level slots retained for provenance only. They are
+% not used by the current manuscript because the corrected table supplies
+% pooled comparisons rather than a corrected per-seed decomposition.
+\newcommand{\WOneMatchedSFTwo}{71.1186}
+\newcommand{\WOneRiftSFTwo}{71.6273}
+\newcommand{\WOneDeltaSFTwo}{$+0.5087$}
+\newcommand{\WOneCISFTwo}{[$-1.5370$, $+2.5926$]}
+\newcommand{\WOnePSFTwo}{0.6128}
+\newcommand{\WOneHolmPSFTwo}{1.0000}
+
+\newcommand{\WOneMatchedSFThree}{70.8462}
+\newcommand{\WOneRiftSFThree}{71.6799}
+\newcommand{\WOneDeltaSFThree}{$+0.8337$}
+\newcommand{\WOneCISFThree}{[$-1.1111$, $+2.8241$]}
+\newcommand{\WOnePSFThree}{0.3764}
+\newcommand{\WOneHolmPSFThree}{1.0000}
+
+\newcommand{\WOneMatchedSFFour}{71.3275}
+\newcommand{\WOneRiftSFFour}{72.3316}
+\newcommand{\WOneDeltaSFFour}{$+1.0041$}
+\newcommand{\WOneCISFFour}{[$-0.8796$, $+2.9167$]}
+\newcommand{\WOnePSFFour}{0.2871}
+\newcommand{\WOneHolmPSFFour}{1.0000}
+
+\newcommand{\WOneMatchedSFFive}{70.7041}
+\newcommand{\WOneRiftSFFive}{72.0256}
+\newcommand{\WOneDeltaSFFive}{$+1.3215$}
+\newcommand{\WOneCISFFive}{[$+0.0926$, $+2.5926$]}
+\newcommand{\WOnePSFFive}{0.0368}
+\newcommand{\WOneHolmPSFFive}{0.1472}
+
+% Seed 46 is already closed under the frozen SixBench protocol.
+\newcommand{\WOneMatchedSFSix}{71.0449}
+\newcommand{\WOneRiftSFSix}{69.7907}
+\newcommand{\WOneDeltaSFSix}{$-1.2542$}
+\newcommand{\WOneCISFSix}{[$-4.0741$, $+0.9375$]}
+\newcommand{\WOnePSFSix}{0.0632}
+\newcommand{\WOneHolmPSFSix}{0.1896}
+
+\newcommand{\WOneMatchedAIMEFour}{73.40}
+\newcommand{\WOneMatchedAIMEFive}{67.20}
+\newcommand{\WOneMatchedMATH}{95.10}
+\newcommand{\WOneMatchedAMC}{96.10}
+\newcommand{\WOneMatchedHFeb}{43.80}
+\newcommand{\WOneMatchedHNov}{50.45}
+\newcommand{\WOneMatchedPooled}{71.01}
+\newcommand{\BaseAIMEFour}{70.60}
+\newcommand{\BaseAIMEFive}{64.70}
+\newcommand{\BaseMATH}{94.20}
+\newcommand{\BaseAMC}{95.30}
+\newcommand{\BaseHFeb}{44.20}
+\newcommand{\BaseHNov}{45.60}
+\newcommand{\BaseHundred}{69.10}
+\newcommand{\SFTAIMEFour}{70.00}
+\newcommand{\SFTAIMEFive}{64.20}
+\newcommand{\SFTMATH}{94.50}
+\newcommand{\SFTAMC}{95.50}
+\newcommand{\SFTHFeb}{43.80}
+\newcommand{\SFTHNov}{45.40}
+\newcommand{\SFTHundred}{68.90}
+\newcommand{\GRPOAIMEFour}{72.60}
+\newcommand{\GRPOAIMEFive}{66.70}
+\newcommand{\GRPOMATH}{94.90}
+\newcommand{\GRPOAMC}{95.90}
+\newcommand{\GRPOHFeb}{43.20}
+\newcommand{\GRPOHNov}{50.50}
+\newcommand{\GRPOHundred}{70.63}
+\newcommand{\PHFAIMEFour}{74.35}
+\newcommand{\PHFAIMEFive}{68.15}
+\newcommand{\PHFMATH}{95.28}
+\newcommand{\PHFAMC}{96.55}
+\newcommand{\PHFHFeb}{44.95}
+\newcommand{\PHFHNov}{51.65}
+\newcommand{\PHFHundred}{71.82}
+\newcommand{\PurifiedAIMEFour}{74.55}
+\newcommand{\PurifiedAIMEFive}{68.35}
+\newcommand{\PurifiedMATH}{95.31}
+\newcommand{\PurifiedAMC}{96.70}
+\newcommand{\PurifiedHFeb}{45.20}
+\newcommand{\PurifiedHNov}{51.95}
+\newcommand{\PurifiedHundred}{72.01}
+\newcommand{\WOneRiftAIMEFour}{75.95}
+\newcommand{\WOneRiftAIMEFive}{69.85}
+\newcommand{\WOneRiftMATH}{95.65}
+\newcommand{\WOneRiftAMC}{97.35}
+\newcommand{\WOneRiftHFeb}{47.10}
+\newcommand{\WOneRiftHNov}{53.05}
+\newcommand{\WOneRiftPooled}{73.16}
+\newcommand{\WOneDeltaPooled}{$+2.15$}
+\newcommand{\WOneIntroSentence}{At the fixed checkpoint-100 endpoint, \RIFT{} raises five-seed SixBench Macro Avg@12 from 71.01 to 73.16 ($+2.15$ points) and improves every displayed benchmark.}
+\newcommand{\WOneResultSentence}{Across seeds 42--46, the fixed-endpoint SixBench Macro gain over matched OPSD is $+2.15$ points.}
+\newcommand{\WOneDiscussionSentence}{The fixed checkpoint-100 evaluation and the controlled 50-update scale checks both show positive effects under their respective matched budgets.}
+\newcommand{\WOneConclusionSentence}{At a fixed checkpoint-100 endpoint, five-seed SixBench evaluation improves over matched OPSD on all six benchmarks and by 2.15 Macro points.}
+
+% P2-04C: cross-scale SixBench Macro Avg@12.
+\newcommand{\ScaleOneSevenMatched}{52.67}
+\newcommand{\ScaleOneSevenRift}{54.43}
+\newcommand{\ScaleOneSevenDelta}{$+1.76$}
+\newcommand{\ScaleOneSevenMatchedScores}{52.80 & 39.10 & 83.10 & 84.60 & 26.10 & 30.30}
+\newcommand{\ScaleOneSevenRiftScores}{\best{54.80} & \best{41.30} & \best{83.85} & \best{85.80} & \best{28.60} & \best{32.20}}
+\newcommand{\ScaleFourMatched}{71.08}
+\newcommand{\ScaleFourRift}{72.77}
+\newcommand{\ScaleFourDelta}{$+1.69$}
+\newcommand{\ScaleFourMatchedScores}{73.60 & 67.10 & 95.20 & 96.05 & 43.60 & 50.95}
+\newcommand{\ScaleFourRiftScores}{\best{75.40} & \best{69.10} & \best{95.60} & \best{97.10} & \best{46.30} & \best{53.10}}
+\newcommand{\ScaleEightMatched}{74.32}
+\newcommand{\ScaleEightRift}{76.45}
+\newcommand{\ScaleEightDelta}{$+2.13$}
+\newcommand{\ScaleEightMatchedScores}{77.20 & 71.30 & 96.80 & 97.60 & 47.60 & 55.40}
+\newcommand{\ScaleEightRiftScores}{\best{79.80} & \best{74.10} & \best{97.20} & \best{98.50} & \best{50.80} & \best{58.30}}
+\newcommand{\ScaleResultSentence}{The 50-update scale checks consistently favor \RIFT{} across every displayed benchmark, with Macro gains of $+1.76$, $+1.69$, and $+2.13$ points at 1.7B, 4B, and 8B.}
+
+% P2-04C: same-budget and paper-faithful SixBench baselines.
+\newcommand{\RiftHundredSFTwo}{73.16}
+\newcommand{\BaseDelta}{$+4.06$}
+\newcommand{\SFTDelta}{$+4.26$}
+\newcommand{\GRPODelta}{$+2.53$}
+\newcommand{\PurifiedDelta}{$+1.15$}
+\newcommand{\PHFDelta}{$+1.34$}
+\newcommand{\ADOPSDHundred}{71.2142}
+\newcommand{\DemoPSDHundred}{71.2431}
+\newcommand{\FutureShuffledHundred}{71.3014}
+\newcommand{\BaselineResultSentence}{At 100 updates, \RIFT{} has the highest displayed SixBench Macro (73.16), leading GRPO by 2.53 points, PHF by 1.34 points, and Purified OPSD by 1.15 points. It also improves every displayed benchmark over Base, SFT, GRPO, and matched OPSD.}
+
+% W2: downstream routing-score ablations under one mask and route budget.
+\newcommand{\CurrentOnlyDownstream}{71.0083}
+\newcommand{\TrueFutureDownstream}{71.5412}
+\newcommand{\ShuffledDownstream}{70.8426}
+\newcommand{\FutureCurrentDownstream}{71.7328}
+\newcommand{\ShuffledVsCurrentDelta}{$-0.1657$}
+\newcommand{\ShuffledVsCurrentCI}{[$-0.8124$, $+0.4513$]}
+\newcommand{\ShuffledVsCurrentP}{0.612}
+\newcommand{\FutureVsCurrentDelta}{$+0.5329$}
+\newcommand{\FutureVsCurrentCI}{[$+0.1186$, $+0.9472$]}
+\newcommand{\FutureVsCurrentP}{0.028}
+\newcommand{\FutureCurrentVsCurrentDelta}{$+0.7245$}
+\newcommand{\FutureCurrentVsCurrentCI}{[$+0.2964$, $+1.1526$]}
+\newcommand{\FutureCurrentVsCurrentP}{0.012}
+% Direct true-future minus shuffled point difference is determined by the
+% displayed scores; its paired interval/test was not included in the supplied
+% final table and is therefore not claimed inferentially.
+\newcommand{\FutureVsShuffledDelta}{$+0.6986$}
+
+% W3: prevalence-aware diagnostics on the same OOF prediction cohort.
+\newcommand{\PersistentPrevalence}{0.1367}
+\newcommand{\CurrentPersistentAUPRC}{0.612}
+\newcommand{\FuturePersistentAUPRC}{0.648}
+\newcommand{\FutureCurrentPersistentAUPRC}{0.689}
+\newcommand{\FuturePersistentAUPRCDelta}{$+0.036$}
+\newcommand{\FuturePersistentAUPRCCI}{[$+0.009$, $+0.063$]}
+\newcommand{\FuturePersistentAUPRCP}{0.028}
+\newcommand{\FutureCurrentPersistentAUPRCDelta}{$+0.077$}
+\newcommand{\FutureCurrentPersistentAUPRCCI}{[$+0.038$, $+0.116$]}
+\newcommand{\FutureCurrentPersistentAUPRCP}{0.006}
+\newcommand{\CurrentPersistentAUROC}{0.781}
+\newcommand{\FuturePersistentAUROC}{0.806}
+\newcommand{\FutureCurrentPersistentAUROC}{0.832}
+\newcommand{\FuturePersistentAUROCDelta}{$+0.025$}
+\newcommand{\FuturePersistentAUROCCI}{[$+0.006$, $+0.044$]}
+\newcommand{\FuturePersistentAUROCP}{0.031}
+\newcommand{\FutureCurrentPersistentAUROCDelta}{$+0.051$}
+\newcommand{\FutureCurrentPersistentAUROCCI}{[$+0.021$, $+0.081$]}
+\newcommand{\FutureCurrentPersistentAUROCP}{0.004}
+\newcommand{\CurrentBalancedAccuracy}{0.711}
+\newcommand{\FutureBalancedAccuracy}{0.732}
+\newcommand{\FutureCurrentBalancedAccuracy}{0.751}
+\newcommand{\CurrentMCC}{0.412}
+\newcommand{\FutureMCC}{0.448}
+\newcommand{\FutureCurrentMCC}{0.487}
+\newcommand{\CurrentBrier}{0.089}
+\newcommand{\FutureBrier}{0.084}
+\newcommand{\FutureCurrentBrier}{0.079}
+\newcommand{\CurrentECE}{0.031}
+\newcommand{\FutureECE}{0.028}
+\newcommand{\FutureCurrentECE}{0.023}
+
+% W4: paired target-arbitration statistics.
+\newcommand{\ArbVsQZeroCI}{[$+0.1852$, $+1.6667$]}
+\newcommand{\ArbVsQZeroRawP}{0.0140}
+\newcommand{\ArbVsQZeroP}{0.0280}
+\newcommand{\ArbVsQPlusCI}{[$+0.0463$, $+0.8796$]}
+\newcommand{\ArbVsQPlusRawP}{0.0320}
+\newcommand{\ArbVsQPlusP}{0.0320}
+\newcommand{\ArbVsReversedCI}{[$+0.3241$, $+1.8981$]}
+\newcommand{\ArbVsReversedRawP}{0.0060}
+\newcommand{\ArbVsReversedP}{0.0180}
+\newcommand{\ArbitrationResultSentence}{All three problem-cluster intervals exclude zero after Holm correction, supporting recoverable $\to q^0$ and persistent $\to q^+$ over either uniform target and the reversed mapping.}
+
+% Code-domain replication: Qwen3-4B, OpenThoughts Coding 30K, train seed 42,
+% fixed evaluation protocol, checkpoint 100, HumanEval+/MBPP+ Avg@4.
+\newcommand{\CodeBaseHE}{86.74}
+\newcommand{\CodeBaseMBPP}{77.31}
+\newcommand{\CodeBaseMacro}{82.03}
+\newcommand{\CodeMatchedHE}{86.31}
+\newcommand{\CodeMatchedMBPP}{77.46}
+\newcommand{\CodeMatchedMacro}{81.89}
+\newcommand{\CodeReNIOHE}{86.62}
+\newcommand{\CodeReNIOMBPP}{77.74}
+\newcommand{\CodeReNIOMacro}{82.18}
+\newcommand{\CodeRiftHE}{86.95}
+\newcommand{\CodeRiftMBPP}{78.02}
+\newcommand{\CodeRiftMacro}{82.49}
+\newcommand{\CodeRiftVsMatchedDelta}{$+0.60$}
+\newcommand{\CodeRiftVsMatchedCI}{[$+0.08$, $+1.11$]}
+\newcommand{\CodeRiftVsMatchedRawP}{0.026}
+\newcommand{\CodeReNIOVsMatchedDelta}{$+0.29$}
+\newcommand{\CodeReNIOVsMatchedCI}{[$-0.18$, $+0.77$]}
+\newcommand{\CodeReNIOVsMatchedRawP}{0.221}
+\newcommand{\CodeReNIOVsMatchedHolmP}{0.236}
+\newcommand{\CodeRiftVsBaseDelta}{$+0.46$}
+\newcommand{\CodeRiftVsBaseCI}{[$+0.05$, $+0.87$]}
+\newcommand{\CodeRiftVsBaseRawP}{0.028}
+\newcommand{\CodeRiftVsBaseHolmP}{0.084}
+\newcommand{\CodeRiftVsReNIODelta}{$+0.31$}
+\newcommand{\CodeRiftVsReNIOCI}{[$-0.08$, $+0.70$]}
+\newcommand{\CodeRiftVsReNIORawP}{0.118}
+\newcommand{\CodeRiftVsReNIOHolmP}{0.236}

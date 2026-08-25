@@ -1,0 +1,6 @@
+comparison,metric,difference,ci_low,ci_high,p
+Positive - Neutral,Branch NLL,-0.00013606,-0.00026319,-0.000014391,0.0285
+Positive - Neutral,Recovery JSD,-0.000022423,-0.000032214,-0.000013226,<0.0001
+Positive - Vanilla,Branch NLL,-0.00020716,-0.00050225,0.00010112,0.1826
+Positive - Vanilla,Recovery JSD,-0.000033739,-0.000046554,-0.000021884,<0.0001
+

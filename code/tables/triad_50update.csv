@@ -1,0 +1,8 @@
+seed,method,aime24_correct,aime25_correct,hmmt25_correct,total_correct,total_completions,avg_at_12
+42,Matched OPSD,264,252,162,678,1080,62.7778
+42,RIFT exact-rank q25,274,250,165,689,1080,63.7963
+43,Matched OPSD,263,234,157,654,1080,60.5556
+43,RIFT exact-rank q25,275,240,158,673,1080,62.3148
+44,Matched OPSD,260,240,150,650,1080,60.1852
+44,RIFT exact-rank q25,271,245,160,676,1080,62.5926
+

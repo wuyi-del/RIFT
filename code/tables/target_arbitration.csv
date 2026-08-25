@@ -1,0 +1,6 @@
+policy,recoverable_target,persistent_target,correct,total,avg_at_12
+Uniform q0,q0,q0,681,1080,63.0556
+Uniform q+,q+,q+,686,1080,63.5185
+Reversed,q+,q0,679,1080,62.8704
+Proposed,q0,q+,691,1080,63.9815
+

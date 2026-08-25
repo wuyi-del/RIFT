@@ -1,0 +1,6 @@
+method,updates,humaneval_plus_avg4,mbpp_plus_avg4,code_macro,delta_vs_matched,ci_low,ci_high,raw_p
+Base,0,86.74,77.31,82.03,,,,
+Matched OPSD,100,86.31,77.46,81.89,,,,
+ReNIO,100,86.62,77.74,82.18,0.29,-0.18,0.77,0.221
+RIFT,100,86.95,78.02,82.49,0.60,0.08,1.11,0.026
+

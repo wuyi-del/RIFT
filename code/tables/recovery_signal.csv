@@ -1,0 +1,7 @@
+predictor,auprc,auroc,delta_auprc_vs_current,auprc_ci_low,auprc_ci_high,auprc_p
+Random,0.86559,0.50136,-0.04090,-0.0568,-0.0251,<0.0001
+Position only,0.89885,0.59686,-0.00764,-0.0158,0.0004,0.063
+Current covariates,0.90649,0.62511,,,,
+Future recovery,0.90980,0.62760,0.00331,-0.0012,0.0078,0.149
+Future + current,0.91840,0.63200,0.01191,0.0049,0.0188,0.0018
+
