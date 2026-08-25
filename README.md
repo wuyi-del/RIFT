@@ -6,6 +6,10 @@ RIFT asks a token-level question that standard privileged distillation leaves op
 
 The repository contains the submission-ready manuscript, compiled PDFs, vector figures, RIFT implementation, matched OPSD control, evaluation code, analysis scripts, reproducibility configurations, unit tests, and the aggregate tables reported in the paper.
 
+For the full experimental protocol, frozen assets, hyperparameters, benchmark
+denominators, statistical procedures, complete result tables, and reproduction
+commands, see [**`EXPERIMENTS.md`**](EXPERIMENTS.md).
+
 > **Release boundary.** Model weights, licensed benchmark copies, completion-level generations, raw server logs, machine configurations, and credentials are intentionally not distributed. All required public asset identifiers and reproduction assumptions are documented below and in [`code/DATASETS.md`](code/DATASETS.md).
 
 ## Overview
