@@ -10,6 +10,61 @@ For the full experimental protocol, frozen assets, hyperparameters, benchmark
 denominators, statistical procedures, complete result tables, and reproduction
 commands, see [**`EXPERIMENTS.md`**](EXPERIMENTS.md).
 
+## Paper at a glance
+
+**Paper:** *RIFT: Future-Recovery Routing for Privileged On-Policy
+Self-Distillation*
+
+[Main paper (PDF)](paper/RIFT_AAAI27_main_8pages.pdf) ·
+[Technical supplement (PDF)](paper/RIFT_AAAI27_supplement.pdf) ·
+[Paper source](paper/RIFT_AAAI27_main.tex) ·
+[Complete experimental record](EXPERIMENTS.md)
+
+### Abstract
+
+On-policy self-distillation trains a reasoning model on its own trajectories
+while using a solution-conditioned view of the same model as dense token-level
+supervision. The central difficulty is that privileged correction is not
+uniformly useful: a disagreement at one reasoning token can either resolve
+along the student's own continuation or persist and require intervention.
+RIFT measures the best future reconvergence of the student and privileged
+views on the realized rollout. It preserves the unprivileged target at
+recoverable conflicts, uses the privileged target at persistent conflicts, and
+uses per-trajectory exact-rank selection to enforce a reproducible routing
+budget. The accompanying ReGap protocol separates privileged-context advantage,
+branch-action value, and transferable recovery skill under fixed-prefix
+counterfactual controls.
+
+### Contributions
+
+1. **Future-recovery routing.** We use future divergence reduction on the
+   realized rollout to decide when privileged answer-conditioned supervision
+   should be preserved versus deferred to the unprivileged reference.
+2. **Exact-rank budget calibration.** We choose an exact number of routed
+   tokens in every trajectory, with deterministic position/hash tie breaking,
+   zero local budget error, and zero tie excess.
+3. **Context-conditioned target arbitration.** RIFT keeps a dense loss at
+   every valid token but changes the target distribution: recoverable cases
+   receive \(q^0\), persistent cases receive \(q^+\).
+4. **ReGap counterfactual analysis.** ReGap distinguishes privileged-context
+   advantage, action advantage, and transferable recovery skill rather than
+   treating privileged rescue as direct evidence of a transferable capability.
+
+### Headline evidence
+
+| Setting | Result |
+|---|---|
+| Budget-matched Qwen3-4B, 50 updates | Across clean seeds 42/43, RIFT improves Avg@12 by **+1.3889 pp** over Matched OPSD (hierarchical 95% CI **[+0.2315, +2.5463]**, \(p=0.0148\)). |
+| Registered Qwen3-4B replication, 50 updates | RIFT obtains **676/1,080 (62.5926)** vs. **650/1,080 (60.1852)** for Matched OPSD: **+2.4074 pp** (95% CI **[+0.3704, +4.4444]**, \(p=0.0216\)). |
+| Fixed-checkpoint Qwen3-4B, 100 updates | RIFT reaches **73.16** SixBench Macro Avg@12 vs. **71.01** for Matched OPSD. |
+| Cross-scale 50-update checks | Matched RIFT gains are **+1.76**, **+1.69**, and **+2.13 pp** at Qwen3-1.7B, 4B, and 8B, respectively. |
+| Code-domain replication | On HumanEval+/MBPP+ Avg@4, RIFT improves Code Macro by **+0.60 pp** over Matched OPSD (95% CI **[+0.08, +1.11]**, \(p=0.026\)). |
+
+All performance claims are tied to their specified model, update horizon,
+evaluation suite, and statistical protocol. See
+[`EXPERIMENTS.md`](EXPERIMENTS.md) for the complete per-benchmark counts,
+controls, uncertainty intervals, and scope boundaries.
+
 > **Release boundary.** Model weights, licensed benchmark copies, completion-level generations, raw server logs, machine configurations, and credentials are intentionally not distributed. All required public asset identifiers and reproduction assumptions are documented below and in [`code/DATASETS.md`](code/DATASETS.md).
 
 ## Overview
